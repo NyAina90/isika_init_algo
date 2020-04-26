@@ -1,0 +1,7 @@
+bonjour
+coucou
+paris
+marseille
+toulouse
+bordeaux
+fin
