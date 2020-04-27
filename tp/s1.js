@@ -8,6 +8,7 @@ window.onload=function(){
 	print("suite tableau et boucles");
 	
 	var tableau2 = [ 23 , 167 , 50 , 256 , 512 , 85 ];
+	
 	//objectif des lignes de code qui vont suivrent :
 	//trouver la première position(indice) de l'élément dont la valeur vaut 256
 	
@@ -21,5 +22,11 @@ window.onload=function(){
 		}
 	}
 	print("positionElt256=" + positionElt256); //affiche ici 3
+	
+	var z=36;
+	var r = Math.sqrt(z); //racinne caréee (square root)
+	print("r="+r);
+	var tableau3 = [ -3 , 16 , -8 , 9 , -8 , 25 ];
+	
 	
 }
