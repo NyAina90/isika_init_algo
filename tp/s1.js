@@ -17,4 +17,10 @@ window.onload=function(){
 	print("taille du tableau=" + taille);
 	print("dernier element du tableau=" + tableau1[taille - 1] );
 	
+	var i=0;
+	while(i<taille){
+		print("element en position " + i + " = " + tableau1[i] );
+		i++; // équivalent à i=i+1;
+	}
+	
 }
