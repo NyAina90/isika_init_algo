@@ -1,0 +1,11 @@
+Pour tous les langages de programmation:
+----------------------------------------
+https://gitforwindows.org/ 
+https://tortoisegit.org/download/
+https://notepad-plus-plus.org/downloads/
+
+Pour le langage java:
+---------------------
+https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-03/R/eclipse-jee-2020-03-R-incubation-win32-x86_64.zip
+
