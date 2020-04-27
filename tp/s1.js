@@ -62,7 +62,52 @@ window.onload=function(){
 	vb=vTemp;
 	
 	print("va="+va + " vb=" + vb);
+	/*
+	var age = prompt("age:"); //40 ou 12 ou ...
 	
+	//var testVraiOuFaux= (age >=18);
+	//print("testVraiOuFaux=" + testVraiOuFaux + " " + typeof testVraiOuFaux);
+	//if(testVraiOuFaux){
+	if(age >=18){
+		print("majeur"); 
+		print("au moins 18 ans");	  
+		}
+	 else {
+		  print("mineur");
+		  print("moins de 18 ans");
+	 }
+	*/
+	
+	//enregistrer dans une variable a1 une première valeur saisie via prompt()
+	//enregistrer dans une variable a2 une deuxieme valeur saisie via prompt()
+	//tester si a1 est plus ou pas que a2
+	//et afficher soit "a1 est plus grand que a2 ou égal"
+	//                 "a1 est plus petit que a2"
+	/*
+	var a1=prompt("a1:");
+	var a2=prompt("a2:");
+	if(a1>=a2){
+		print("a1 est plus grand que a2 ou égal");
+	}else{
+		print("a1 est plus petit a2 ");
+	}
+	*/
+	
+	/*
+	var b1=5;
+	var b2=7;
+	if((5==b1) && ( b2 > 5)){
+		print("b1 et 5 ont les memes valeurs");
+		print("ET on a aussi b2 qui est supérieur à 5");
+	}else{
+		print("b1 et 5 ont des valeurs différentes");
+		print("...");
+	}
+	*/
+	
+	age=prompt("age:");
+	//tester (avec un test inversé) avec un ou logique ( || en  javascript) 
+	//si l'age saisi est compris en 20 et 30 ans
 	
 	
 	
