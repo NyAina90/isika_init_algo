@@ -27,6 +27,8 @@ window.onload=function(){
 	var r = Math.sqrt(z); //racinne caréee (square root)
 	print("r="+r);
 	var tableau3 = [ -3 , 16 , -8 , 9 , -8 , 25 ];
+	//tp : parcours les éléments du tableau 3
+	//et on affiche la racinne carrée du ieme élément s'il est positif
 	
 	
 }
