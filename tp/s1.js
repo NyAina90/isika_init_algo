@@ -23,4 +23,24 @@ window.onload=function(){
 		i++; // équivalent à i=i+1;
 	}
 	
+	print("dans ordre inverse:"  );
+	i= taille - 1;
+	//en Tp , boucle while inversée pour afficher les éléments du 
+	//dernier au premier:
+	while(i>=0){
+		print("element en position " + i + " = " + tableau1[i] );
+		i--; // équivalent à i=i-1;
+	}
+	
+	//autre application de la boucle while
+	//rejouer un bloc d'instructions tant qu'on le souhaite:
+	var envieDeContinuer="oui";
+	while(envieDeContinuer!="non") //ou bien != "fin"
+	{
+		var x=prompt("x:");
+		var y=2*x;
+		print("y="+y);
+		envieDeContinuer=prompt("envieDeContinuer(oui ou non):");
+	}
+	
 }
