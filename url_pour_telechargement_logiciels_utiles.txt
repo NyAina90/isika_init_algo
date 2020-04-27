@@ -9,3 +9,7 @@ Pour le langage java:
 https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
 https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-03/R/eclipse-jee-2020-03-R-incubation-win32-x86_64.zip
 
+Pour javascript:
+---------------
+https://nodejs.org/dist/v12.16.2/node-v12.16.2-x64.msi
+https://code.visualstudio.com/
