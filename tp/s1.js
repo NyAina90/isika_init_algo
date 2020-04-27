@@ -7,4 +7,19 @@ window.onload=function(){
 	
 	print("suite tableau et boucles");
 	
+	var tableau2 = [ 23 , 167 , 50 , 256 , 512 , 85 ];
+	//objectif des lignes de code qui vont suivrent :
+	//trouver la première position(indice) de l'élément dont la valeur vaut 256
+	
+	var positionElt256; //inconnue avant recherche
+	for(i=0;i<tableau2.length;i++){
+		if(tableau2[i]==256){
+			positionElt256=i;
+			break; //sortie anticipée de boucle
+			       //on sort de la boucle avant d'arriver sur
+				   //les derniers éléments du tableau
+		}
+	}
+	print("positionElt256=" + positionElt256); //affiche ici 3
+	
 }
