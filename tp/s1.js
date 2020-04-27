@@ -105,10 +105,17 @@ window.onload=function(){
 	}
 	*/
 	
+	//en java et en javascript , && signifie ET (et aussi)
+	//                           || signifie OU (ou bien)
+	
 	age=prompt("age:");
 	//tester (avec un test inversé) avec un ou logique ( || en  javascript) 
 	//si l'age saisi est compris en 20 et 30 ans
-	
+	if((age<20) || (age>30)) {
+		print("l'age n'est pas entre 20 et 30");
+	}else{
+			print("l'age est entre 20 et 30");
+	}
 	
 	
 }
