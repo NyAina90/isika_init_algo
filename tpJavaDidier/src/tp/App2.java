@@ -24,10 +24,29 @@ public class App2 {
 		}
 		return res;
 	}
+	
+	public static double plusGrandeValeurDuTableau(double[] tab) {
+		double res=-9999999;
+		//en exercice , parcourir le tableau tab avec une boucle for et un indice i
+		     //si res est plus petit que tab[i]
+		         //alors nouvelle valeur de res = tab[i]
+		for(int i=0 ; i<tab.length   ; i++  ) {
+			if( res < tab[i]) {
+				res=tab[i];
+			}
+		}
+		return res;
+	}
+	
 
 	public static void main(String[] args) {
 		
 		double[] tableau2 = { -6 , 16 , -8 , -4 , 36 , 25 };
+		double x= plusGrandeValeurDuTableau(tableau2);
+		print("x="+x);
+		
+		
+		
 		int i=0;
 		while(i<tableau2.length) {
 			if(tableau2[i]>=0) {
