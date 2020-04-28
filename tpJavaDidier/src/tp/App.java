@@ -65,7 +65,7 @@ public class App {
 	
 	public static void main(String[] args) {
 		//f2();
-		f1();
+		f1(); 
 	}
 	
 	public static void f2() {
