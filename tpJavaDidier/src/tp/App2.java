@@ -45,7 +45,9 @@ public class App2 {
 	
 	
 	public static String retournerLaValeurDeLaPlusLongueChaineDuTableau(String[] tab) {
+		String res="";
 		//...
+		return res;
 	}
 	
 
