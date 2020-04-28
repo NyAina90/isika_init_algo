@@ -38,7 +38,21 @@ public class App {
 		print("dans echanger: a="+a + " b=" + b);
 	}*/
 
+	public static void permuterDansTableau(int[] tableau,int i,int j) {
+		int valTemp = tableau[i];
+		tableau[i] = tableau[j];
+		tableau[j] = valTemp;
+	}
+	
 	public static void main(String[] args) {
+		
+		//var tableau1 = [ 2 , 30 , 25 , 15 ] ; en javascript
+		int[] tableau1 = { 2 , 30 , 25 , 15 }; //en java
+		permuterDansTableau(tableau1,0,1);
+		print("apres echange: tableau1=");
+		for(int i=0 ; i<tableau1.length ; i++) {
+			print("en position " + i + " : " + tableau1[i]);
+		}
 		/*
 		int va=3; 
 		int vb=4;
