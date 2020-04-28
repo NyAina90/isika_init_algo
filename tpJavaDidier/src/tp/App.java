@@ -54,7 +54,19 @@ public class App {
 		}
 	}
 	
+	public static void afficherLePlusGrand(int a, int b) {
+		if(a >= b) {
+			print("le plus grand="+a);
+		}
+		else {
+			print("le plus grand="+b);
+		}
+	}
+	
 	public static void main(String[] args) {
+		afficherLePlusGrand(9,3); //affichera 9
+		int e1=5; int e2=8;
+		afficherLePlusGrand(e1,e2); //affichera 8
 		
 		//var tableau1 = [ 2 , 30 , 25 , 15 ] ; en javascript
 		int[] tableau1 = { 2 , 30 , 25 , 15 }; //en java
