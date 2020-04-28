@@ -38,12 +38,31 @@ public class App2 {
 		return res;
 	}
 	
+	public static void convertirToutLeTableauEnMajuscule(String[] tab) {
+		//répéter en boucle :
+		     //tab[i]= tab[i].toUppercase();
+	}
+	
+	
+	public static String retournerLaValeurDeLaPlusLongueChaineDuTableau(String[] tab) {
+		//...
+	}
+	
 
 	public static void main(String[] args) {
+		
+		String[] tableauS = { "hiver" , "printemps" , "ete" , "automne" };
+		convertirToutLeTableauEnMajuscule(tableauS);
+		//+boucle for ou boucle while pour afficher un par un les éléments du tableau
+		String plusGrandeChaine = retournerLaValeurDeLaPlusLongueChaineDuTableau(tableauS);
+		print("plusGrandeChaine="+plusGrandeChaine);
 		
 		String s1="mardi";
 		String s2 = s1.toUpperCase();
 		print(s2);
+		
+		int taille=s1.length();
+		print("taille="+taille);
 		
 		String nomFichier="App2.java";
 		int posPoint = nomFichier.indexOf("."); //recherche la premièrere position trouvée
