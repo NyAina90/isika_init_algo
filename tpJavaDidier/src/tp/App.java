@@ -64,6 +64,15 @@ public class App {
 	}
 	
 	public static void main(String[] args) {
+		//f2();
+		f1();
+	}
+	
+	public static void f2() {
+		
+	}
+	
+	public static void f1() {
 		afficherLePlusGrand(9,3); //affichera 9
 		int e1=5; int e2=8;
 		afficherLePlusGrand(e1,e2); //affichera 8
