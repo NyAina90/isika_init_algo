@@ -10,6 +10,12 @@ public class App {
 		return res;
 	}
 	
+	//void = type très spécial (pas de valeur de retour)
+	public static void print(String message) {
+		System.out.println(message);
+		//pas de return ...
+	}
+	
 	public static double multiplier(double a,double b) {
 		double res=a*b;
 		return res;
@@ -22,7 +28,7 @@ public class App {
 
 	public static void main(String[] args) {
 		double res1 = multiplier(5.0,2.0);
-		System.out.println("res1="+res1);
+		print("res1="+res1);
 		int res2=doubleDe(3);
 		System.out.println("res2="+res2);
 		// commentaire
