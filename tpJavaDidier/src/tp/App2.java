@@ -26,6 +26,17 @@ public class App2 {
 	}
 
 	public static void main(String[] args) {
+		
+		double[] tableau2 = { -6 , 16 , -8 , -4 , 36 , 25 };
+		int i=0;
+		while(i<tableau2.length) {
+			if(tableau2[i]>=0) {
+				double racine = Math.sqrt(tableau2[i]);
+				print("racine="+racine);
+			}
+			i++; //i=i+1;
+		}//fin de while
+		
 		print("app2");
 		double res1 = retournerLaPlusPetiteValeur(6,8);
 		print("res1 (plus petite valeur)="+res1);
