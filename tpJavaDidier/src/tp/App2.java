@@ -41,6 +41,26 @@ public class App2 {
 
 	public static void main(String[] args) {
 		
+		String s1="mardi";
+		String s2 = s1.toUpperCase();
+		print(s2);
+		
+		String nomFichier="App2.java";
+		int posPoint = nomFichier.indexOf("."); //recherche la premièrere position trouvée
+		                                        //d'un caractère recherché
+		                                        //retourne -1 si pas trouvé
+		int posX = nomFichier.indexOf("x");
+		if(posX != -1) {
+			print("nomFichier comporte un x");
+		}else {
+			print("nomFichier comporte pas de x");
+		}
+		print("posPoint="+posPoint);
+		String extension = nomFichier.substring(posPoint+1); //sous-partie à la fin
+		print("extension="+extension);
+		String debutNomFichier = nomFichier.substring(0,posPoint);//sous partie [O,posPoint-1]
+		print("debutNomFichier="+debutNomFichier);
+		
 		double[] tableau2 = { -6 , 16 , -8 , -4 , 36 , 25 };
 		double x= plusGrandeValeurDuTableau(tableau2);
 		print("x="+x);
