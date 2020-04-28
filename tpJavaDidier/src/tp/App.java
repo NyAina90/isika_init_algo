@@ -38,10 +38,20 @@ public class App {
 		print("dans echanger: a="+a + " b=" + b);
 	}*/
 
+	//lors de l'appel à cette fonction,
+	//les paramétres a et b (de types élémentaires int) sont passés par copie de VALEUR
+	//mais le paramètre tableau (de type OBJET ou tableau) est passé par REFERENCE
+	//tableau peut être vu comme un autre nom que l'original tableau1 
 	public static void permuterDansTableau(int[] tableau,int i,int j) {
 		int valTemp = tableau[i];
 		tableau[i] = tableau[j];
 		tableau[j] = valTemp;
+	}
+	
+	public static void printTableauEntier(int[] tableau) {
+		for(int i=0 ; i<tableau.length ; i++) {
+			print("en position " + i + " : " + tableau[i]);
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -50,9 +60,8 @@ public class App {
 		int[] tableau1 = { 2 , 30 , 25 , 15 }; //en java
 		permuterDansTableau(tableau1,0,1);
 		print("apres echange: tableau1=");
-		for(int i=0 ; i<tableau1.length ; i++) {
-			print("en position " + i + " : " + tableau1[i]);
-		}
+		printTableauEntier(tableau1);
+		
 		/*
 		int va=3; 
 		int vb=4;
