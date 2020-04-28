@@ -29,6 +29,12 @@ window.onload=function(){
 	var tableau3 = [ -3 , 16 , -8 , 9 , -8 , 25 ];
 	//tp : parcours les éléments du tableau 3
 	//et on affiche la racinne carrée du ieme élément s'il est positif
-	
+	for(i=0;i<tableau3.length;i++){
+		if(tableau3[i]>=0){
+			var e=tableau3[i]; 
+			var racine = Math.sqrt(e);
+			print("racine carree de "+e + " = " + racine);
+		}
+	}
 	
 }
