@@ -9,8 +9,15 @@ public class App {
 		reader.close();
 		return res;
 	}
+	
+	public static double multiplier(double a,double b) {
+		double res=a*b;
+		return res;
+	}
 
 	public static void main(String[] args) {
+		double res1 = multiplier(5.0,2.0);
+		System.out.println("res1="+res1);
 		// commentaire
 		String v1="titi2"; 
 		v1="toto";
