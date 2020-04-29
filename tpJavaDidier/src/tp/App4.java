@@ -42,13 +42,27 @@ public class App4 {
 	       ...
 	 */
 	
+	public static int factorielle(int n) {
+		int res=1;
+		for(int i=2;i<=n;i++) {
+			res=res*i;
+		}
+		return res;
+	}
+	
 
 	public static void main(String[] args) {
+		
+		
+		int n=4; // factorielle(4) = 1 * 2 * 3 * 4 = 24
+		         //factorielle(2) = 1 * 2
+		         // factorielle(5) = 1 * 2 * 3 * 4 * 5
+		print("facrorielle(n)=" + factorielle(n));
 	
 		int[] tableau1 = { 12, 4 , 34 , 8 , 28 , 3 };
 		triAbulle(tableau1);
 		for(int i=0 ; i<tableau1.length; i++) {
-			print(">>"+tableau1[i]);
+			System.out.print(" " + tableau1[i]);
 		}
 	}
 
