@@ -39,14 +39,22 @@ public class App2 {
 	}
 	
 	public static void convertirToutLeTableauEnMajuscule(String[] tab) {
-		//répéter en boucle :
-		     //tab[i]= tab[i].toUppercase();
+		for(int i=0;i<tab.length;i++) {
+		     tab[i]= tab[i].toUpperCase();
+		}
 	}
 	
 	
 	public static String retournerLaValeurDeLaPlusLongueChaineDuTableau(String[] tab) {
 		String res="";
-		//...
+		int plusGrandeTaille=0;
+		for(int i=0;i<tab.length;i++) {
+			int taille = tab[i].length();
+			if(taille>=plusGrandeTaille) {
+				plusGrandeTaille=taille;
+				res=tab[i];
+			}
+		}
 		return res;
 	}
 	
@@ -56,6 +64,9 @@ public class App2 {
 		String[] tableauS = { "hiver" , "printemps" , "ete" , "automne" };
 		convertirToutLeTableauEnMajuscule(tableauS);
 		//+boucle for ou boucle while pour afficher un par un les éléments du tableau
+		for(int i=0;i<tableauS.length;i++) {
+		     print(tableauS[i]);
+		}
 		String plusGrandeChaine = retournerLaValeurDeLaPlusLongueChaineDuTableau(tableauS);
 		print("plusGrandeChaine="+plusGrandeChaine);
 		
