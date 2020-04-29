@@ -58,6 +58,18 @@ public class App3 {
 	public static double calcul(String operation,double a, double b) {
 		double res=0;
 		//switch/case sur operation , ...
+		switch(operation) {
+		case "+" :
+			res=a+b; break;
+		case "*" :
+			res=a*b; break;
+		case "-" :
+			res=a-b; break;
+		case "/" :
+			res=a/b; break;
+		default:
+			res=0;
+		}
 		return res;
 	}
 	
@@ -65,7 +77,9 @@ public class App3 {
 	public static void main(String[] args) {
 		
 		double res=calcul("+",4,3); //4+3=7
+		print("res add="+res);
 		double res2=calcul("*",4,3); //4*3=12
+		print("res mult="+res2);
 		
 	         //indices: 0    1    2   3   4	
 	 int[] tableau1 = { 23 , 2 , 45 , 6 , 7 };
