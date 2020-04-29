@@ -109,7 +109,15 @@ public class App4 {
 	
 	
 	public static void main(String[] args) {
+		/*
+		int valAleatoire = (int) (100 * Math.random());
+		print("valAleatoire="+valAleatoire);
 		
+		print("nombre a deviner:");
+		java.util.Scanner reader = new java.util.Scanner(System.in);
+		int valeurPoposee=  reader.nextInt();
+		print("valeurPoposee="+valeurPoposee);
+		*/
 		double x=2.0;
 		int n=4; 
 		//x à la puissance 4 = x * x * x *x 
@@ -135,7 +143,7 @@ public class App4 {
 		print("  ");
 		int[] tableau2 = { 12, 4 , 34 , 8 , 28 , 3 };
 		java.util.Arrays.sort(tableau2); //tri prédéfini du langage java sur tableau d'entiers
-		                                 //avec en interne un alogorithme rapide et performant appelé "quickSort"
+		                                 //avec en interne un algorithme rapide et performant appelé "quickSort"
 	
 		for(int i=0 ; i<tableau2.length; i++) {
 			System.out.print(" " + tableau2[i]);
