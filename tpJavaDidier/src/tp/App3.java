@@ -3,16 +3,28 @@ package tp;
 public class App3 {
 	
 
-		public static void print(String message) {
+	public static void print(String message) {
 				System.out.println(message);
 				//pas de return ...
-			}
+	}
+	
+	public static String inverserChaine(String chaine) {
+		//ex: chaine vaut "rouge"
+		String res=""; //"" , "e" , "eg" , "egu" , ...
+		int taille= chaine.length();
+		for(int i=taille-1; i>=0  ;i--) {
+			res = res + chaine.charAt(i);
+		}
+		return res; //ex: "eguor"
+	}
 
 	public static void main(String[] args) {
 
      String c1 = "rouge";
+     String c1_inverse = inverserChaine(c1);
+     print("c1_inverse="+c1_inverse);
      //afficher la longeur de cette chaine de caractères.
-     print("logueur=" + c1.length());
+     print("longueur=" + c1.length());
      
      String c2="bleu ciel";
      //en exercice , trouver et afficher la position du caractère ' ' (ou " ")
