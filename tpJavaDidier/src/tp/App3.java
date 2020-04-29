@@ -17,8 +17,30 @@ public class App3 {
 		}
 		return res; //ex: "eguor"
 	}
+	
+	public static int[] construireTableauInverse(int[] tab) {
+		int taille=tab.length;
+		int[] tabRes = new int[taille];//construit un nouveau de la meme taille
+		                               //chaque case du tableau est vide 
+		                               //valeur jamais initialisée
+		for(int i=0; i<taille  ;i++) {
+			int valCase = tab[i];
+			tabRes[taille -i -1]=valCase;
+		}
+		/*for(int i=taille-1; i>=0  ;i--) {
+			int valCase = tab[i];
+			tabRes[taille -i -1]=valCase;
+		}*/
+		return tabRes;
+	}
 
 	public static void main(String[] args) {
+	         //indices: 0    1    2   3   4	
+	 int[] tableau1 = { 23 , 2 , 45 , 6 , 7 };
+	 int[] tableauInverse = construireTableauInverse(tableau1);
+	 for(int i=0;i<tableauInverse.length;i++) {
+		 print(">>"+tableauInverse[i]);
+	 }
 
      String c1 = "rouge";
      String c1_inverse = inverserChaine(c1);
