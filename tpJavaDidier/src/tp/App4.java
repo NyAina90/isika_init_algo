@@ -63,6 +63,20 @@ public class App4 {
 		}
 	}
 	
+	/*
+	 à lire du bas vers le haut :
+	               factorielle(1) retourne 1
+	           factorielle(2) appelle en interne 2 * factorielle(1)
+	        factorielle(3) appelle en interne 3 * factorielle(2)
+	    factorielle(4) appelle en interne 4 * factorielle(3)
+	 main() appelle factorielle(4) qui en interne a n=4
+	 */
+	
+	//en interne le langage de programmation empile les appels de fonction
+	//dans une zone particulière de la mémoire appelée "STACK" (mot anglais pour pile)
+	
+	//En cas de bug et de boucle infinie on a souvent le message d'erreur "StackOverflow"
+	
 
 	public static void main(String[] args) {
 		
