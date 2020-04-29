@@ -55,8 +55,18 @@ public class App3 {
 		return res;
 	}
 	
+	public static double calcul(String operation,double a, double b) {
+		double res=0;
+		//switch/case sur operation , ...
+		return res;
+	}
+	
 
 	public static void main(String[] args) {
+		
+		double res=calcul("+",4,3); //4+3=7
+		double res2=calcul("*",4,3); //4*3=12
+		
 	         //indices: 0    1    2   3   4	
 	 int[] tableau1 = { 23 , 2 , 45 , 6 , 7 };
 	 int[] tableauInverse = construireTableauInverse(tableau1);
