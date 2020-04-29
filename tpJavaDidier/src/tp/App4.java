@@ -1,5 +1,6 @@
 package tp;
 
+
 public class App4 {
 	
 	
@@ -14,6 +15,23 @@ public class App4 {
 		tableau[j] = valTemp;
 	}
 	
+	//en langage C,C++,java,javascript, ...
+	//la fonction de comparaison doit renvoyer :
+	// 0 si a et b ont les memes valeurs
+	// >0 (par ex 1) si a > b
+	// <0 (par ex -1) si a < b
+	// ça peut se programmer avec a et b qui sont des int ou des double ou des String
+	// ou carrément des objets "Personne" selon .age ou selon .nom
+	public static int comparerEntiers(int a,int b) {
+		int res=0;
+		if(a < b) {
+			res= -1;
+		}else if( a> b) {
+			res=1;
+		}
+		return res;
+	}
+	
 	public static void triAbulle(int[] tab) {
 		//algorithme "tri à bulle" : faire remonter en premières positions
 		//les éléments les plus légers/petits
@@ -23,7 +41,9 @@ public class App4 {
 			//i = indice de l'élément du tableau à comparer avec tous ceux qui suivent
 			for(int j=i+1 ; j<taille ; j++) {
 				// j = indice d'un des éléments du tableau après celui d'indice i
-				if(tab[j]<tab[i]) {
+				
+				//if(tab[j]<tab[i]) {
+				if(comparerEntiers(tab[j],tab[i])<0) {
 					permuterDansTableau(tab, i, j);
 				}					
 			}
@@ -103,12 +123,20 @@ public class App4 {
 		         // factorielle(5) = 1 * 2 * 3 * 4 * 5
 		
 		print("puissance(x,n)=" + puissance(x,n));
+		print("x à la puissance n =" + Math.pow(x,n));
 		print("factorielle(n)=" + factorielle(n));
 	
 		int[] tableau1 = { 12, 4 , 34 , 8 , 28 , 3 };
 		triAbulle(tableau1);
 		for(int i=0 ; i<tableau1.length; i++) {
 			System.out.print(" " + tableau1[i]);
+		}
+		
+		int[] tableau2 = { 12, 4 , 34 , 8 , 28 , 3 };
+		java.util.Arrays.sort(tableau2);
+	
+		for(int i=0 ; i<tableau2.length; i++) {
+			System.out.print(" " + tableau2[i]);
 		}
 	}
 
