@@ -29,7 +29,8 @@ public class App4 {
 		}else if( a> b) {
 			res=1;
 		}
-		return res;
+		return res;  //si par ordre croissant
+		//return -res;  //si par ordre décroissant
 	}
 	
 	public static void triAbulle(int[] tab) {
@@ -131,9 +132,10 @@ public class App4 {
 		for(int i=0 ; i<tableau1.length; i++) {
 			System.out.print(" " + tableau1[i]);
 		}
-		
+		print("  ");
 		int[] tableau2 = { 12, 4 , 34 , 8 , 28 , 3 };
-		java.util.Arrays.sort(tableau2);
+		java.util.Arrays.sort(tableau2); //tri prédéfini du langage java sur tableau d'entiers
+		                                 //avec en interne un alogorithme rapide et performant appelé "quickSort"
 	
 		for(int i=0 ; i<tableau2.length; i++) {
 			System.out.print(" " + tableau2[i]);
