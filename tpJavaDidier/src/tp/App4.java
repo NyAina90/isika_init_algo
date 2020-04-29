@@ -77,14 +77,30 @@ public class App4 {
 	
 	//En cas de bug et de boucle infinie on a souvent le message d'erreur "StackOverflow"
 	
-
+    public static double puissance(double x , int n) {
+    	double res=0;
+    	//code provisoire à  améliorer
+    	return 0;
+    }
+	
+	
 	public static void main(String[] args) {
 		
+		double x=2.0;
+		int n=4; 
+		//x à la puissance 4 = x * x * x *x 
+		//x à la puissance 3 = x * x * x 
+		//puissance(x,n) = puissance(x,n-1) * x
+		//puissance(x,0) = 1
+	
+		//2 à la puissance 4 = 2 * 2 *2 *2 = 16
 		
-		int n=4; // factorielle(4) = 1 * 2 * 3 * 4 = 24
+		// factorielle(4) = 1 * 2 * 3 * 4 = 24
 		         //factorielle(2) = 1 * 2
 		         // factorielle(5) = 1 * 2 * 3 * 4 * 5
-		print("facrorielle(n)=" + factorielle(n));
+		
+		print("puissance(x,n)=" + puissance(x,n));
+		print("factorielle(n)=" + factorielle(n));
 	
 		int[] tableau1 = { 12, 4 , 34 , 8 , 28 , 3 };
 		triAbulle(tableau1);
