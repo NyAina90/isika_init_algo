@@ -78,9 +78,12 @@ public class App4 {
 	//En cas de bug et de boucle infinie on a souvent le message d'erreur "StackOverflow"
 	
     public static double puissance(double x , int n) {
-    	double res=0;
-    	//code provisoire à  améliorer
-    	return 0;
+    	double res=1;
+    	if(n>=1) { 
+    		res = x * puissance(x,n-1); 
+    	}
+    	//else (ne rien faire,  laisser res=1 par défaut)    
+    	return res;
     }
 	
 	
