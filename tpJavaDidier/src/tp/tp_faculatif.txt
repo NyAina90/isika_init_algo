@@ -1,0 +1,22 @@
+coder et appeler double calculerTva(double ht,double taux);
+
+=======================
+Sachant que 
+double nombreAleatoireEntreZeroEtUn = Math.random();
+faire deviner un nombre entre 0 et 100
+avec indication plus grand ou plus petit à chaque proposition
+--> boucle while et saisie via prompt ou ...
+
+
+===========
+
+Sachant que 
+char c1= s.charAt(i); 
+permet de récupérer le i eme caractère d'une chaine
+et que celui ci peut être comparer à un autre via c1==c2 ou c1==' ' ou c1=='a' 
+coder la fonction
+
+static boolean testPalindrome(String ch){...}
+renvoyant true si ch est un palindrome (une chaine qui peut se lire dans les 2 sens)
+exemple : "été" , "kayak" ,
+et  "esope reste ici et se repose" (en ne tenant pas compte des caractères ' ' à ignorer donc)

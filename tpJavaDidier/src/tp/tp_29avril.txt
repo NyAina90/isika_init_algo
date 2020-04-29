@@ -1,0 +1,16 @@
+construction nouveau tableau à n case:
+n=tab1.length
+int[] tab2 = new int[n];
+==================================
+coder et appeler static int[] construireTableauInverse(int[] tab){ ...}
+
+--------
+couleurEnAnglais avec switch/case ("rouge" --> "red" , "vert" --> "green" , ...)
+et
+res=calcul('+' , 3 , 4) ; 
+res=calcul('*' , 3 , 4) ; avec switch/case sur String operation
+--------
+tri à bulle 
+
+-------
+factorielle , puissance
