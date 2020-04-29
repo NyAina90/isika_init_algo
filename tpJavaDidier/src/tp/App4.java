@@ -42,12 +42,25 @@ public class App4 {
 	       ...
 	 */
 	
-	public static int factorielle(int n) {
+	public static int factorielleSansRecursivite(int n) {
 		int res=1;
 		for(int i=2;i<=n;i++) {
 			res=res*i;
 		}
 		return res;
+	}
+	
+	//on appelle une fonction RECURSIVE , une fonction qui s'appelle elle même
+	//avec  un ou plusieurs paramètres différents pour éviter une boucle infinie
+	public static int factorielle(int n) {
+		// factorielle(n) = 1 * 2 * 3 * 4 * ... * n-1 * n
+		// factorielle(n) = factorielle(n-1) * n si n vaut au moins 1
+		if(n==1) {
+			return 1;
+			}
+		else { 
+			return n * factorielle(n-1); 
+		}
 	}
 	
 
