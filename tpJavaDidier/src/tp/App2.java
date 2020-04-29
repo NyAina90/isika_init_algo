@@ -78,7 +78,7 @@ public class App2 {
 		print("taille="+taille);
 		
 		String nomFichier="App2.java";
-		int posPoint = nomFichier.indexOf("."); //recherche la premièrere position trouvée
+		int posPoint = nomFichier.indexOf("."); //recherche la première position trouvée
 		                                        //d'un caractère recherché
 		                                        //retourne -1 si pas trouvé
 		int posX = nomFichier.indexOf("x");
