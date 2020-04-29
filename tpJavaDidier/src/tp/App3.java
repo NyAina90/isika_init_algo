@@ -33,6 +33,28 @@ public class App3 {
 		}*/
 		return tabRes;
 	}
+	
+	
+	public static String couleurEnAnglais(String couleurEnFrancais) {
+		String res="";
+		switch(couleurEnFrancais) {
+		case "rouge": 
+			res="red";
+			//instruction2 quand c'est rouge
+			break;
+		case "vert":
+			res="green"; break;
+		case "bleu":
+			res="blue"; break;
+		case "jaune":
+			res="yellow"; break;
+		default :
+			res="black";
+		}
+		
+		return res;
+	}
+	
 
 	public static void main(String[] args) {
 	         //indices: 0    1    2   3   4	
@@ -43,6 +65,13 @@ public class App3 {
 	 }
 
      String c1 = "rouge";
+     String c1EnAnglais = couleurEnAnglais(c1);
+     print("c1EnAnglais="+c1EnAnglais);
+     
+     String c1bis = "jaune";
+     String c1bisEnAnglais = couleurEnAnglais(c1bis);
+     print("c1bisEnAnglais="+c1bisEnAnglais);
+     
      String c1_inverse = inverserChaine(c1);
      print("c1_inverse="+c1_inverse);
      //afficher la longeur de cette chaine de caractères.
